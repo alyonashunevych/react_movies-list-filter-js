@@ -17,7 +17,7 @@ function getPrepareMovies(movies, { query }) {
 export const App = () => {
   const [query, setQuery] = useState('');
 
-  const visibleMovies = getPrepareMovies([...moviesFromServer], { query });
+  const visibleMovies = getPrepareMovies(moviesFromServer, { query });
 
   return (
     <div className="page">
